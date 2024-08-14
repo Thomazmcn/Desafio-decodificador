@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte: 'Inter', sans-serif;
+    --cor-fonte: 
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    background-color:#f3f3fb;    
+}
+
+.campo{
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 32px;
+    color: #0A3871;
+}
