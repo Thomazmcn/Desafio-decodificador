@@ -25,24 +25,41 @@ body{
 .cabecalho{
     padding: 40px 0 40px 40px;
 }
-
-.campo{
+.principal{
+    display: flex;
+}
+.miolo{
+    padding: 0 0 0 240px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.miolo_campo{
     font-family: var(--fonte);
     font-weight: 400;
     font-size: 32px;
     color: var(--cor-fonte);
 }
 
-.frame_1{
+#spaced-item{
+    margin-top: 635px;
+}
+
+.miolo_frame_1{
     font-family: var(--fonte);
     font-weight: 400;
     font-size: 12px;
     color: var(--cor-nota-rodape);
 }
 
-.frame_3{
+
+
+.miolo_frame_3{
+    display: flex;
+    gap: 24px;
     font-family: var(--fonte);
     font-weight: 400;
-    font-size: 32px;
+    font-size: 16px;
     color: var(--cor-fonte);
 }
