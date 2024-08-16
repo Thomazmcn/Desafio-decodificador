@@ -6,9 +6,8 @@
     --cor-fonte: #0A3871;
     --cor-fundo: #f3f3fb;
     --cor-nota-rodape: #45565F;
-
-    
-
+    --cor-botao: #D8DFE8;
+    --cor-hover: #FFFFFF;
 }
 
 *{
@@ -32,9 +31,8 @@ body{
     padding: 0 0 0 240px;
     display: flex;
     flex-direction: column;
-    
-    
 }
+
 .miolo_campo{
     font-family: var(--fonte);
     font-weight: 400;
@@ -42,7 +40,7 @@ body{
     color: var(--cor-fonte);
 }
 
-#spaced-item{
+#spaced-item-1{
     margin-top: 635px;
 }
 
@@ -53,13 +51,35 @@ body{
     color: var(--cor-nota-rodape);
 }
 
-
+#spaced-item-2{
+    margin-top: 16px;
+}
 
 .miolo_frame_3{
     display: flex;
+    width: 680px;
+    height: 67px;
     gap: 24px;
     font-family: var(--fonte);
     font-weight: 400;
     font-size: 16px;
     color: var(--cor-fonte);
+}
+
+.miolo_frame_3_botao{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    border: 2px solid var(--cor-fonte);
+    width: 378px;
+    padding: 24px;
+    text-align: center;
+    border-radius: 24px;
+    text-decoration: none;
+    background-color: var(--cor-botao);
+}
+
+.miolo_frame_3_botao:hover{
+    background-color: var(--cor-fonte);
+    color: var(--cor-hover);
 }
