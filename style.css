@@ -8,6 +8,7 @@
     --cor-nota-rodape: #45565F;
     --cor-botao: #D8DFE8;
     --cor-hover: #FFFFFF;
+    --cor-cx-resposta: #FFFFFF;
 }
 
 *{
@@ -33,7 +34,7 @@ body{
     flex-direction: column;
 }
 
-.miolo_campo{
+.miolo__campo{
     font-family: var(--fonte);
     font-weight: 400;
     font-size: 32px;
@@ -44,18 +45,21 @@ body{
     margin-top: 635px;
 }
 
-.miolo_frame_1{
+.miolo__frame__1{
+    display: flex;
+    align-items: center;
     font-family: var(--fonte);
     font-weight: 400;
     font-size: 12px;
     color: var(--cor-nota-rodape);
+    
 }
 
 #spaced-item-2{
     margin-top: 16px;
 }
 
-.miolo_frame_3{
+.miolo__frame__3{
     display: flex;
     width: 680px;
     height: 67px;
@@ -66,7 +70,7 @@ body{
     color: var(--cor-fonte);
 }
 
-.miolo_frame_3_botao{
+.miolo__frame__3__botao{
     display: flex;
     justify-content: center;
     gap: 8px;
@@ -79,7 +83,43 @@ body{
     background-color: var(--cor-botao);
 }
 
-.miolo_frame_3_botao:hover{
+.miolo__frame__3__botao:hover{
     background-color: var(--cor-fonte);
     color: var(--cor-hover);
+}
+
+
+.caixa__de__resposta{
+    justify-content: right;
+    gap: 8px;
+    width: 400px;
+    height: 944px;
+    text-align: center;
+    border-radius: 32px;
+    background-color: var(--cor-cx-resposta);
+}
+
+.texto__resposta{
+    display: flex;
+    flex-direction: column;
+    width: 336px;
+    height: 122px;
+}
+
+.texto__resposta__feedback{
+    width: 336;
+    height: 58;
+    font-weight: 700;
+    font-size: 24px;
+    align-items: center;
+
+}
+
+.texto__resposta__instrucoes{
+    width: 336;
+    height: 48;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    
 }
