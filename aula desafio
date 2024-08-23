@@ -1,0 +1,14 @@
+1 - esta com problema para ajustar a parte direita da pagina de resposta. O bonequinho nao desaparece para dar espaço para o texto.
+
+function btnCopiar() {
+  mensagem.select();
+  navigator.clipboard.writeText(mensagem.value);
+  mensagem.value = "";
+  alert("Texto Copiado");
+}
+
+
+
+problema sergio
+navigator.clipboard.writeText(textoCop.value);
+print 14:49

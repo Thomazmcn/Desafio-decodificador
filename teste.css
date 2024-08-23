@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900');
+
+:root {
+    --fonte: 'Inter', sans-serif;
+    --cor-fonte: #FFFFFF;
+    --cor-fundo: #000000;
+    --cor-nota-rodape: #BBBBBB;
+    --cor-botao: #333333;
+    --cor-hover: #FFFFFF;
+    --cor-cx-resposta: #222222;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--cor-fundo);    
+    color: var(--cor-fonte);
+    font-family: var(--fonte);
+}
+
+.cabecalho{
+    padding: 40px;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.miolo{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.miolo__campo{
+    font-size: 24px;
+}
+
+#spaced-item-1{
+    margin-top: 20px;
+}
+
+.miolo__frame__1{
+    font-size: 14px;
+    color: var(--cor-nota-rodape);
+}
+
+#spaced-item-2{
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
+}
+
+.miolo__frame__3__botao{
+    padding: 10px 20px;
+    text-align: center;
+    border: 2px solid var(--cor-fonte);
+    background-color: var(--cor-botao);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--cor-fonte);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.miolo__frame__3__botao:hover{
+    background-color: var(--cor-fonte);
+    color: var(--cor-hover);
+}
+
+.caixa__de__resposta{
+    margin-top: 40px;
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background-color: var(--cor-cx-resposta);
+    border-radius: 8px;
+}
+
+.texto__resposta{
+    margin-top: 20px;
+}
+
+.texto__resposta__feedback{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.texto__resposta__instrucoes{
+    margin-top: 10px;
+    font-size: 16px;
+    color: var(--cor-nota-rodape);
+}
+
+.ascii-art {
+    font-family: monospace;
+    white-space: pre;
+    line-height: 1;
+    font-size: 10px; /* Adjust to your desired size */
+}
