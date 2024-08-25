@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +11,21 @@
         <nav class="cabecalho__logo">
             <a class="cabecalho__logo__link" href="https://www.alura.com.br/">
                 <img src="./midia/Logo.png" alt="Logo da alura."></a>
-        </nav></header>
+        </nav>
+    </header>
+    
     <main class="principal">
         <section class="miolo">
-            <div class="miolo__campo">Digite seu texto</div>
+            <textarea class="miolo__campo" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            
             <div class="miolo__frame__1" id="spaced-item-1">
-                <a><img src="./midia/bi_exclamation-circle-fill.png"> 
-                    Apenas letras minúsculas e sem acento</a>
+                <h6><img src="./midia/bi_exclamation-circle-fill.png"> 
+                    Apenas letras minúsculas e sem acento</h6>
             </div>
+
             <div class="miolo__frame__3" id="spaced-item-2">
-            <a class="miolo__frame__3__botao">Criptografar </a>
-            <a class="miolo__frame__3__botao">Descriptografar </a>
+            <button class="miolo__frame__3__botao">Criptografar </button>
+            <button class="miolo__frame__3__botao">Descriptografar </button>
             </div>
         </section>
         <section class="caixa__de__resposta">
@@ -29,6 +33,7 @@
             <section class="texto__resposta">
                 <div class="texto__resposta__feedback">Nenhuma mensagem encontrada</div>
                 <div class="texto__resposta__instrucoes">Digite um texto que você deseja criptografar ou descriptografar.</div>
+		<button class="texto__resposta__copiar">Copiar</button>
             </section>    
         </section>
         
