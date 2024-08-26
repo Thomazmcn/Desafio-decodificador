@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador criptografico</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__logo">
@@ -16,7 +18,7 @@
     
     <main class="principal">
         <section class="miolo">
-            <textarea class="miolo__campo" cols="41" rows="4" placeholder="Digite seu texto"></textarea>
+            <textarea class="miolo__campo" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
             
             <div class="miolo__frame__1" id="spaced-item-1">
                 <h6><img src="./midia/bi_exclamation-circle-fill.png"> 
@@ -30,14 +32,15 @@
         </section>
         <section class="caixa__de__resposta">
             <img src="./midia/High quality products 1 1.svg" alt="Pessoa sentada olhando atravez de uma lupa.">
+            <!-- <img src="./assets/img/MuñecoMonito.png" alt="imagen de monito" class="result__img"> -->
             <section class="texto__resposta">
                 <div class="texto__resposta__feedback">Nenhuma mensagem encontrada</div>
                 <div class="texto__resposta__instrucoes">Digite um texto que você deseja criptografar ou descriptografar.</div>
-		<button class="texto__resposta__copiar">Copiar</button>
+		        <button class="texto__resposta__copiar">Copiar</button>
             </section>    
         </section>
         
-        </main>
-    
+    </main>
+    <script src="encriptador.js"></script>
 </body>
 </html>

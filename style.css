@@ -45,14 +45,18 @@ body{
     margin-top: 635px;
 }
 
-.miolo__frame__1{
+.miolo__frame__1 {
     display: flex;
     align-items: center;
     font-family: var(--fonte);
     font-weight: 400;
     font-size: 12px;
     color: var(--cor-nota-rodape);
-    
+}
+
+.miolo__frame__1 img {
+    vertical-align: middle;
+    margin-right: 8px; 
 }
 
 #spaced-item-2{
@@ -110,6 +114,7 @@ body{
 .texto__resposta__feedback{
     width: 336;
     height: 58;
+    font-family: var(--fonte);
     font-weight: 700;
     font-size: 24px;
     align-items: center;
@@ -121,6 +126,7 @@ body{
     height: 48;
     font-weight: 400;
     font-size: 16px;
+    font-family: var(--fonte);
     align-items: center;
     
 }
