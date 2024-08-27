@@ -3,7 +3,7 @@ const textArea = d.querySelector(".miolo__campo");
 const mensagem = d.querySelector(".resposta__instrucoes");
 const respostaTitulo = d.querySelector(".resposta__titulo");
 const respostaImg = d.querySelector(".caixa__resposta img");
-const botaoCopiar = d.querySelector(".resposta__botao"); // Seleciona o botão "Copiar"
+const botaoCopiar = d.querySelector(".resposta__botao"); 
 
 const chavecriptografica = {
     a: 'ai',
@@ -21,42 +21,29 @@ const chavedescriptografica = {
     ufat: 'u'
 };
 
-// Inicialmente, ocultar o botão "Copiar"
 botaoCopiar.style.display = "none";
 
 function btnEncriptar() {
     const textoInicial = criptografia(textArea.value);
     mensagem.textContent = textoInicial;
-
-    // Ocultar a imagem e o título
     respostaTitulo.style.display = "none";
-    respostaImg.style.display = "none";
-
-    // Mostrar o texto tratado e o botão "Copiar"
+    respostaImg.style.display = "none";  
     mensagem.style.display = "block";
     botaoCopiar.style.display = "block";
-
-    // Limpar o campo de texto
     textArea.value = "";
 }
 
 function btnDesencriptar() {
     const textoInicial = descriptografia(textArea.value);
     mensagem.textContent = textoInicial;
-
-    // Ocultar a imagem e o título
     respostaTitulo.style.display = "none";
     respostaImg.style.display = "none";
-
-    // Mostrar o texto tratado e o botão "Copiar"
     mensagem.style.display = "block";
     botaoCopiar.style.display = "block";
-
-    // Limpar o campo de texto
     textArea.value = "";
 }
 
-// Função para copiar o texto para o clipboard
+
 function copiarTexto() {
     const textoParaCopiar = mensagem.textContent;
     navigator.clipboard.writeText(textoParaCopiar).catch(err => {
@@ -64,7 +51,6 @@ function copiarTexto() {
     });
 }
 
-// Adiciona o evento de clique ao botão "Copiar"
 botaoCopiar.addEventListener("click", copiarTexto);
 
 function substituicao(letra) {
