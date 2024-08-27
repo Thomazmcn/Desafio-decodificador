@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador criptografico</title>
+    <title>Decodificador criptográfico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="cabecalho">
-        <nav class="cabecalho__logo">
-            <a class="cabecalho__logo__link" href="https://www.alura.com.br/">
-                <img src="./midia/Logo.png" alt="Logo da alura."></a>
+        <nav>
+            <a href="https://www.alura.com.br/">
+                <img src="./midia/Logo.png" alt="Logo da Alura" class="cabecalho__logo__img">
+            </a>
         </nav>
     </header>
     
@@ -20,26 +24,25 @@
         <section class="miolo">
             <textarea class="miolo__campo" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
             
-            <div class="miolo__frame__1" id="spaced-item-1">
-                <h6><img src="./midia/bi_exclamation-circle-fill.png"> 
-                    Apenas letras minúsculas e sem acento</h6>
+            <div class="alerta__mensagem" id="spaced-item-1">
+                <img src="./midia/bi_exclamation-circle-fill.png" alt="Alerta">
+                <span>Apenas letras minúsculas e sem acento</span>
             </div>
 
-            <div class="miolo__frame__3" id="spaced-item-2">
-            <button class="miolo__frame__3__botao">Criptografar </button>
-            <button class="miolo__frame__3__botao">Descriptografar </button>
+            <div class="miolo__botoes" id="spaced-item-2">
+                <button class="miolo__botao" onclick="btnEncriptar()">Criptografar</button>
+                <button class="miolo__botao" onclick="btnDesencriptar()">Descriptografar</button>
             </div>
         </section>
-        <section class="caixa__de__resposta">
-            <img src="./midia/High quality products 1 1.svg" alt="Pessoa sentada olhando atravez de uma lupa.">
-            <!-- <img src="./assets/img/MuñecoMonito.png" alt="imagen de monito" class="result__img"> -->
-            <section class="texto__resposta">
-                <div class="texto__resposta__feedback">Nenhuma mensagem encontrada</div>
-                <div class="texto__resposta__instrucoes">Digite um texto que você deseja criptografar ou descriptografar.</div>
-		        <button class="texto__resposta__copiar">Copiar</button>
-            </section>    
-        </section>
         
+        <aside class="caixa__resposta">
+            <img src="./midia/High quality products 1 1.svg" alt="Pessoa sentada olhando através de uma lupa"> 
+            <div class="resposta__conteudo">
+                <h3 class="resposta__titulo">Nenhuma mensagem encontrada</h3>
+                <p class="resposta__instrucoes">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                <button class="resposta__botao">Copiar</button>
+            </div>
+        </aside>
     </main>
     <script src="encriptador.js"></script>
 </body>
